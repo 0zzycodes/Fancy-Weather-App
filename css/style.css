@@ -186,7 +186,7 @@ button img {
 .info {
   width: 350px;
   background: #3f3e3eed;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 .form {
   width: 100%;
