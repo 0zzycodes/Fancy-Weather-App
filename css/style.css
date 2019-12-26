@@ -305,6 +305,7 @@ button img {
   }
   .current {
     height: 30vh;
+    padding-bottom: 10px;
   }
   .info {
     height: 70vh;
