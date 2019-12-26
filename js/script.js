@@ -189,7 +189,7 @@ if (navigator.geolocation) {
 
 function timeConverter(UNIX_timestamp) {
   const a = new Date(UNIX_timestamp * 1000),
-    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'December'],
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     year = a.getFullYear(),
     month = months[a.getMonth()],
