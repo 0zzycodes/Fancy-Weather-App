@@ -105,7 +105,7 @@ if (navigator.geolocation) {
       let value = document.querySelector('input').value
       console.log(value);
       getFavData(value.toLowerCase())
-
+      document.querySelector('form').reset()
     })
 
   function getFavData(id) {
@@ -117,7 +117,9 @@ if (navigator.geolocation) {
           longt
         } = res
         let url = `${proxy}https://api.darksky.net/forecast/${api}/${latt},${longt}`;
-        console.log(res);
+        if (res.matches === null) {
+          return city.innerHTML = 'Not Found'
+        }
         fetchData(url)
         city.innerHTML = ` ${res.standard.city}`;
       });
