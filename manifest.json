@@ -1,4 +1,6 @@
 {
+  "name": "Ozzy Weather App",
+  "short_name": "Weather App",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
