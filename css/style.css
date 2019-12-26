@@ -300,6 +300,9 @@ button img {
   .current {
     height: 36%;
   }
+  .info {
+    height: calc(100% - 36%);
+  }
   input {
     width: 78%;
   }
