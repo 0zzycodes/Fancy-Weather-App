@@ -155,6 +155,7 @@ input {
   padding: 10px 10px 1px 5px;
   border: none;
   border-radius: 0;
+  outline: none;
   border-bottom: 1px solid #f4f4fd;
 }
 .form-input-label {
@@ -167,7 +168,8 @@ input {
   top: 25px;
   transition: 300ms ease all;
 }
-input:focus ~ .form-input-label {
+input:focus ~ .form-input-label,
+input:valid ~ .form-input-label {
   top: 1px;
   font-size: 10px;
 }
