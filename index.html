@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ozzy Weather App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <div class="app">
+      <div class="current">
+        <div class="brand">
+          <h6>OZZY WEATHER APP</h6>
+          <h6 class="day">TODAY</h6>
+        </div>
+        <div class="clock">
+          <h2>6:24 AM</h2>
+        </div>
+        <div class="forcast">
+          <div class="temp">23°</div>
+          <div class="more-info">
+            <h3 class="city">IBADAN</h3>
+            <span class="date">Monday 9 Sep</span>
+          </div>
+          <div class="summary">
+            <img src="assets/cloud.svg" alt="" />
+            <span class="desc">cloudy</span>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="form">
+          <form>
+            <input type="text" name="search" id="search" />
+            <label class="form-input-label">Other location</label>
+            <button><img src="assets/search.svg" alt="" /></button>
+          </form>
+        </div>
+        <div class="flex-item">
+          <div class="fav">
+            <h6>OTHER LOCATIONS</h6>
+            <ul>
+              <li onClick="getFavData(lagos)"><span>Lagos</span></li>
+              <li onClick="getFavData(new york)"><span>New York</span></li>
+              <li onClick="getFavData(london)"><span>London</span></li>
+            </ul>
+          </div>
+          <div class="details">
+            <h6>WEATHER DETAILS</h6>
+            <ul>
+              <li><span>Humidity:</span> <span class="hum">42%</span></li>
+              <li>
+                <span>Pressure:</span> <span class="pressure">1011 mb</span>
+              </li>
+              <li><span>Ozone:</span> <span class="ozone">200</span></li>
+              <li>
+                <span>Wind Speed:</span> <span class="wind-speed">3 km/h</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <div class="daily-forcast">
+            <h6>DAILY FORCAST</h6>
+            <ul id="output">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
