@@ -304,10 +304,10 @@ button img {
     height: 100vh;
   }
   .current {
-    height: 36%;
+    height: 30vh;
   }
   .info {
-    height: calc(100% - 36%);
+    height: 70vh;
   }
   input {
     width: 78%;
