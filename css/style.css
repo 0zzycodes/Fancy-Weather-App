@@ -113,11 +113,11 @@ button img {
   width: 20px;
 }
 .bg-image {
-  background: url('../assets/2479956.jpg');
+  background: url('../assets/default.jpg');
   background-position: center;
   background-size: cover;
-  -webkit-filter: blur(8px);
-  filter: blur(8px);
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
   height: 100vh;
   width: 100vw;
 }
@@ -128,12 +128,12 @@ button img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  max-width: 1000px;
   width: 80%;
-  background-image: url('../assets/2479956.jpg');
+  background-image: url('../assets/default.jpg');
   background-position: center;
   background-size: cover;
   margin: auto;
-  /* width: 1000px; */
   height: 500px;
   display: flex;
   justify-content: space-between;

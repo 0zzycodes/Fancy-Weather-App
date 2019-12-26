@@ -172,7 +172,7 @@ function changeBG(icon) {
     app.style.background = "url('./assets/snow.gif')"
     app.style.backgroundPosition = "center"
     app.style.backgroundSize = "cover"
-    descImage.innerHTML = `<img src="assets/snow.svg"></img>`;
+    descImage.innerHTML = `<img src="assets/snowing.svg"></img>`;
   } else if (icon === "sleet") {
     document.querySelector('.current').style.background = '#1b1b1ba6'
     bgImage.style.background = "url('./assets/sleet.gif')"
@@ -208,7 +208,7 @@ function changeBG(icon) {
     app.style.background = "url('./assets/cloudy.gif')"
     app.style.backgroundPosition = "center"
     app.style.backgroundSize = "cover"
-    descImage.innerHTML = `<i class="wi wi-cloudy"></i>`;
+    descImage.innerHTML = `<img src="assets/cloud.svg"></img>`;
   } else if (icon === "partly-cloudy-day") {
     document.querySelector('.current').style.background = '#1b1b1ba6'
     bgImage.style.background = "url('./assets/partly-cloudy-day.gif')"
@@ -226,9 +226,9 @@ function changeBG(icon) {
     app.style.background = "url('./assets/partly-cloudy-night.gif')"
     app.style.backgroundPosition = "center"
     app.style.backgroundSize = "cover"
-    descImage.innerHTML = `<i class="wi wi-night-alt-cloudy"></i>`;
+    descImage.innerHTML = `<img src="assets/partlyCloudyNight.svg"></img>`;
   } else {
-    descImage.innerHTML = `<i class="wi wi-day-sunny"></i>`;
+    descImage.innerHTML = `<img src="assets/cloud.svg"></img>`;
   }
 }
 

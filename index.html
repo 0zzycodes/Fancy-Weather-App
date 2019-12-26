@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Weather App" />
     <title>Ozzy Weather App</title>
+    <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="description" content="Ozzy Weather app" />
+    <meta name="theme-color" content="#ffa500" />
   </head>
   <body>
+    <span id="butInstall" aria-label="Install" hidden></span>
     <div class="bg-image"></div>
     <div class="app">
       <div class="current">
@@ -70,6 +79,8 @@
         </div>
       </div>
     </div>
+    <script src="scripts/service.js"></script>
     <script src="js/script.js"></script>
+    <script src="scripts/install.js" ></script>
   </body>
 </html>
