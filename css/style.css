@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+}
 ul li {
   list-style: none;
 }
@@ -76,6 +79,39 @@ a {
 img {
   width: 40px;
 }
+form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+input {
+  width: 78%;
+  background: none;
+  background-color: transparent;
+  color: #f4f4fd;
+  font-size: 18px;
+  padding: 10px 10px 1px 5px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  border-bottom: 1px solid #f4f4fd;
+}
+input:focus ~ .form-input-label,
+input:valid ~ .form-input-label {
+  top: 1px;
+  font-size: 10px;
+}
+button {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+button img {
+  width: 20px;
+}
 .bg-image {
   background: url('../assets/2479956.jpg');
   background-position: center;
@@ -85,9 +121,7 @@ img {
   height: 100vh;
   width: 100vw;
 }
-body {
-  display: flex;
-}
+
 .app {
   position: absolute;
   top: 50%;
@@ -140,24 +174,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-form {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-}
-input {
-  width: 78%;
-  background: none;
-  background-color: transparent;
-  color: #f4f4fd;
-  font-size: 18px;
-  padding: 10px 10px 1px 5px;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  border-bottom: 1px solid #f4f4fd;
-}
+
 .form-input-label {
   color: #f4f4fd;
   font-size: 12px;
@@ -167,21 +184,6 @@ input {
   left: 22px;
   top: 25px;
   transition: 300ms ease all;
-}
-input:focus ~ .form-input-label,
-input:valid ~ .form-input-label {
-  top: 1px;
-  font-size: 10px;
-}
-button {
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  outline: none;
-  margin-left: 10px;
-}
-button img {
-  width: 20px;
 }
 .info {
   width: 350px;
@@ -241,7 +243,7 @@ button img {
   .app {
     width: 90vw;
     height: 90vh;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
   }
